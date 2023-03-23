@@ -22,7 +22,7 @@ const Login = () => {
 
   const login = (event) => {
     event.preventDefault();
-    axios.post(process.env.REACT_APP_LOG, user).then((res) => {
+    axios.post("https://white-moth-wig.cyclic.app/Login", user).then((res) => {
       if (res.data.user) {
         setLoginUser(res.data.user);
         history("/");

@@ -24,7 +24,7 @@ const Register = () => {
     const { name, email, password } = user;
 
     if (name && email && password) {
-      axios.post(process.env.REACT_APP_REG, user).then((res) => {
+      axios.post("https://white-moth-wig.cyclic.app/Register", user).then((res) => {
         //alert(res.data.message);
         history("/login");
       });
