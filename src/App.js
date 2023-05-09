@@ -12,7 +12,7 @@ export const context = createContext();
 
 function App() {
   const [loginuser, setLoginUser] = useState({});
-
+ // element={loginuser && loginuser._id ? <Homepage /> : <Login />}
   return (
     <div className="App">
       <context.Provider value={{ loginuser, setLoginUser }}>
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route
               path="/"
-              element={loginuser && loginuser._id ? <Homepage /> : <Login />}
+              element={<Homepage />}
             />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
