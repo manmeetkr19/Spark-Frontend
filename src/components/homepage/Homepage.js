@@ -67,7 +67,10 @@ const Homepage = () => {
             alt="window os"
             style={{ height: "120px", width: "150px" }}
           ></img>
+          <a href="https://demo.filestash.app/s/f5Qybll">
           <h1 style={{ color: "white" }}>Download</h1>
+          </a>
+          
         </button>
       </div>
       <div className="collage">
